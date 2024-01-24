@@ -3,7 +3,7 @@ import numpy as np
 def sort_bernoulli(arr):
     
     # Count sort
-    count = sort_rnd_bernoulli.size // 2
+    count = arr.size // 2
     arr[:count] = 0
     arr[count:] = 1
     
@@ -18,7 +18,7 @@ def sort_binomial(arr):
     
     return arr
 
-def insert_binomial (new_trial, trials_list):
+def insert_binomial (new_trial, arr):
 
     if new_trial == 0:
         
@@ -29,11 +29,11 @@ def insert_binomial (new_trial, trials_list):
         #trials_list.extend([new_trial])
         
         #numpy
-        trials_list = np.insert(trials_list, 0, new_trial)
+        arr = np.insert(arr, 0, new_trial)
     else:
         #trials_list.append(new_trial)
         
         #numpy
-        trials_list = np.append(trials_list, new_trial)
+        arr = np.append(arr, new_trial)
     
-    return trials_list
+    return arr
