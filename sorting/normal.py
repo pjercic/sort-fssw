@@ -1,3 +1,5 @@
+# https://www.johndcook.com/blog/2022/03/09/normal-order-statistics/
+# https://en.wikipedia.org/wiki/Order_statistic
 import numpy as np
 
 def sort_normal(arr):
